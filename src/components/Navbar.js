@@ -1,11 +1,25 @@
 import React from "react";
-import "bootstrap/js/dist/dropdown";
-import "bootstrap/js/dist/collapse";
+import { Link, useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
+export const Navbar = () => {
+  const [cookies, setCookies] = useCookies(["access_token"]);
+  const navigate = useNavigate();
 
-function NavBar({ Toggle }) {
+  const logout = () => {
+    setCookies("access_token", "");
+    window.localStorage.clear();
+    navigate("/auth");
+  };
   return (
-   <div></div>
+    <div className="navbar">
+      <Link to="/">Home</Link>
+    
+      {!cookies.access_token ? (
+        <Link to="/auth">Login/Register</Link>
+      ) : (
+        <button onClick={logout}> Logout </button>
+      )}
+    </div>
   );
-}
-export default NavBar;
+};

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FlightData from "./FlightData";
-import NavBar from "./Navbar";
+import NavBar from "./navbar";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 

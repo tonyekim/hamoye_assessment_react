@@ -24,7 +24,7 @@ function FlightData() {
   
     return ( 
         <div className="h-[200px]">
-          <h2 className="text-white">Flight Data Information</h2>
+          <h2 className="text-white mt-4">Welcome to the Dashboard!!! Check to see Flight Information Data</h2>
           <table className="table">
             <thead>
               <tr>

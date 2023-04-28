@@ -2,7 +2,6 @@ import React from "react";
 import Login from "../components/Login";
 import Register from "../components/Register";
 
-
 export const Auth = () => {
   return (
     <div className="auth">
@@ -11,5 +10,3 @@ export const Auth = () => {
     </div>
   );
 };
-
-
