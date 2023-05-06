@@ -15,7 +15,7 @@ const Login = () => {
       event.preventDefault();
   
       try {
-        const result = await axios.post("https://my-personal-server.onrender.com/auth/login", {
+        const result = await axios.post("https://assessment-test-mh3m.onrender.com/auth/login", {
           username,
           password,
         });
