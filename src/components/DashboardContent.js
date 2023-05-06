@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import FlightData from "./FlightData";
-import NavBar from "./navbar";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const DashboardContent = () => {
   return (
     <div className="px-3">
-      {/* <NavBar /> */}
+    
       <div className="d-flex  bg-primary justify-content-center align-items-center">
         <div className="">
           
